@@ -16,7 +16,7 @@ public static class PregnancyUtility__GetInheritedGenes
     private static readonly MethodInfo _method_calc_genes =
         AccessTools.Method(typeof(PregnancyUtility__GetInheritedGenes), nameof(CalculateGenes));
 
-    private static float GetChance(TypedGene gene)
+    private static float getChance(TypedGene gene)
     {
         var num = 0.5f;
         switch (gene.Type)
@@ -90,7 +90,7 @@ public static class PregnancyUtility__GetInheritedGenes
             }
 
             PregnancyUtility.tmpGeneChances.TryGetValue(gene.def, out var value);
-            PregnancyUtility.tmpGeneChances[gene.def] = value + GetChance(item);
+            PregnancyUtility.tmpGeneChances[gene.def] = value + getChance(item);
             if (!PregnancyUtility.tmpGenesShuffled.Contains(gene.def))
             {
                 PregnancyUtility.tmpGenesShuffled.Add(gene.def);

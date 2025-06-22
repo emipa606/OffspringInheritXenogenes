@@ -7,6 +7,7 @@
   <supportedVersions>
     <li>1.4</li>
     <li>1.5</li>
+    <li>1.6</li>
   </supportedVersions>
   <modDependencies>
     <li>
@@ -40,7 +41,7 @@ Furthermore, this mod changes the likelihood of inheriting archite genes. In van
 
 Plus, all of these values are configurable! So if you want xenogens to be passed on, but at a lower chance, or you want to guarantee or entirely disable archite inheritance, or any other tweaks, just check the mod options!
 
-One last note about how vanilla gene inheritance works, which this mod has not changed: when a pawn is generated, it is assigned a maximum metabolism based on the following logic: 70% chance for 1, 20% chance for 2, 10% chance for 3. A pawn with metabolism 1 will not be able to inherit any genes that would push their total metabolism outside of the range { -1, 1 }. If some of your xenogenes aren't being inherited sometimes, it's because of this mechanic. My other mod removes this system: https://steamcommunity.com/sharedfiles/filedetails/?id=2881479142
+One last note about how vanilla gene inheritance works, which this mod has not changed: when a pawn is generated, it is assigned a maximum metabolism based on the following logic: 70% chance for 1, 20% chance for 2, 10% chance for 3. A pawn with metabolism 1 will not be able to inherit any genes that would push their total metabolism outside of the range { -1, 1 }. If some of your xenogenes aren't being inherited sometimes, it's because of this mechanic. My other mod removes this system: https://steamcommunity.com/sharedfiles/filedetails/?id=3225695697
 
 Safe to be added to, and removed from, existing saves. Genes are determined by the game at the point of conception, so adding this mod during an existing pregnancy won't change the baby's genes.
 
@@ -59,6 +60,8 @@ Femboy Gene: https://steamcommunity.com/sharedfiles/filedetails/?id=2881009626
 [*] Do not report errors by making a discussion-thread, I get no notification of that.
 [*] If you have the solution for a problem, please post it to the GitHub repository.
 [*] Use [url=https://github.com/RimSort/RimSort/releases/latest]RimSort[/url] to sort your mods
-[/list]</description>
-  <modVersion IgnoreIfNoMatchingField="True">1.5.0</modVersion>
+[/list] 
+
+[url=https://steamcommunity.com/sharedfiles/filedetails/changelog/3266000468][img]https://img.shields.io/github/v/release/emipa606/OffspringInheritXenogenes?label=latest%20version&amp;style=plastic&amp;color=9f1111&amp;labelColor=black[/img][/url] | tags:  inherited genes</description>
+  <modVersion IgnoreIfNoMatchingField="True">1.6.0</modVersion>
 </ModMetaData>

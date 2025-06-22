@@ -20,26 +20,26 @@ public class OffspringInheritsXenogenesMod : Mod
 
     public override void DoSettingsWindowContents(Rect rect)
     {
-        var listing_Standard = new Listing_Standard();
-        listing_Standard.Begin(rect);
+        var listingStandard = new Listing_Standard();
+        listingStandard.Begin(rect);
         var label = "OIX.EndogeneChance".Translate(Config.EndogeneChance);
-        Config.EndogeneChance = listing_Standard.SliderLabeled(label, Config.EndogeneChance, 0f, 100f);
+        Config.EndogeneChance = listingStandard.SliderLabeled(label, Config.EndogeneChance, 0f, 100f);
         Config.EndogeneChance = (float)Math.Round(Config.EndogeneChance, 0);
         var label2 = "OIX.XenogeneChance".Translate(Config.XenogeneChance);
-        Config.XenogeneChance = listing_Standard.SliderLabeled(label2, Config.XenogeneChance, 0f, 100f);
+        Config.XenogeneChance = listingStandard.SliderLabeled(label2, Config.XenogeneChance, 0f, 100f);
         Config.XenogeneChance = (float)Math.Round(Config.XenogeneChance, 0);
         var label3 = "OIX.ArchiteMultiplier".Translate(Config.ArchiteMultiplier);
-        Config.ArchiteMultiplier = listing_Standard.SliderLabeled(label3, Config.ArchiteMultiplier, 0f, 10f);
+        Config.ArchiteMultiplier = listingStandard.SliderLabeled(label3, Config.ArchiteMultiplier, 0f, 10f);
         Config.ArchiteMultiplier = (float)Math.Round(Config.ArchiteMultiplier, 1);
         if (currentVersion != null)
         {
-            listing_Standard.Gap();
+            listingStandard.Gap();
             GUI.contentColor = Color.gray;
-            listing_Standard.Label("OIX.CurrentModVersion".Translate(currentVersion));
+            listingStandard.Label("OIX.CurrentModVersion".Translate(currentVersion));
             GUI.contentColor = Color.white;
         }
 
-        listing_Standard.End();
+        listingStandard.End();
         base.DoSettingsWindowContents(rect);
     }
 
